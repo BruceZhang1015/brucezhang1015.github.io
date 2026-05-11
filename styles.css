@@ -77,8 +77,8 @@ header {
 
 /* Shared styles for both <img class="avatar"> and the placeholder <div> */
 .avatar {
-  width: 88px;
-  height: 88px;
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
   flex-shrink: 0;
   object-fit: cover; /* applies when replaced with <img> */
