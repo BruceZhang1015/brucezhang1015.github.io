@@ -182,7 +182,6 @@ section h2 {
 /* ─── About ──────────────────────────────────── */
 #about p {
   font-size: 0.975rem;
-  max-width: 640px;
   color: var(--text);
 }
 
@@ -217,7 +216,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   min-height: 130px;
-  padding: 1rem;
+  padding: 0.25rem;
   letter-spacing: 0.01em;
   border-bottom: 1px solid var(--border);
 }
@@ -330,7 +329,6 @@ section h2 {
 /* ─── Contact ────────────────────────────────── */
 .contact-intro {
   font-size: 0.975rem;
-  max-width: 560px;
   color: var(--text);
   margin-bottom: 1.4rem;
 }
