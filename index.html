@@ -2,211 +2,420 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yiwen (Bruce) Zhang</title>
-  <meta name="description" content="M.S. student in Data Science at NYU. Research in human mobility modeling, reinforcement learning, and computational systems.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yiwen (Bruce) Zhang · Human Mobility &amp; Urban Systems</title>
+  <meta name="description" content="Yiwen (Bruce) Zhang is an M.S. student in Data Science at New York University researching human mobility, computational urban systems, and spatiotemporal generative modeling.">
+  <meta name="author" content="Yiwen (Bruce) Zhang">
+  <meta name="theme-color" content="#FBFAF7">
+  <link rel="canonical" href="https://brucezhang1015.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yiwen (Bruce) Zhang">
+  <meta property="og:description" content="M.S. in Data Science at NYU. Research on human mobility, urban systems, and spatiotemporal generative modeling.">
+  <meta property="og:url" content="https://brucezhang1015.github.io/">
+  <meta property="og:image" content="https://brucezhang1015.github.io/assets/img/portrait.webp">
+
+  <!-- Favicon: SVG for modern browsers, PNG/ICO fallbacks -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/B.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ═══════════════════════════════════════
-       HEADER / HERO
-  ═══════════════════════════════════════ -->
-  <header>
-    <div class="container">
-      <div class="header-inner">
+  <!--
+    CV: every CV link on this page points to assets/cv.pdf.
+    To update the CV, replace that file (keep the same name) — no HTML edits needed.
+  -->
 
-        <img class="avatar" src="assets/profile-small.png" alt="Yiwen (Bruce) Zhang">
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Yiwen (Bruce) Zhang, home">Yiwen (Bruce) Zhang</a>
 
-        <div class="header-text">
-          <h1>Yiwen (Bruce) Zhang</h1>
-          <p class="role">M.S. Student in Data Science at NYU</p>
-          <p class="tagline">
-            Interested in human mobility modeling, reinforcement learning, and computational systems; currently conducting human mobility research at NYU https://mingzhenlu-lab.com/
-          </p>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="nav-toggle-label">Menu</span>
+      </button>
 
-
-          <nav class="header-links" aria-label="Quick links">
-            <a href="mailto:yz8063@nyu.edu">Email</a>
-            <span class="sep" aria-hidden="true">·</span>
-            <a href="https://github.com/brucezhang1015" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <span class="sep" aria-hidden="true">·</span>
-            <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-          </nav>
-        </div>
-
-      </div>
+      <nav id="site-nav" class="site-nav" aria-label="Primary" data-nav>
+        <ul>
+          <li><a href="#top" data-spy="top">Home</a></li>
+          <li><a href="#research" data-spy="research">Research</a></li>
+          <li><a href="#publications" data-spy="publications">Publications</a></li>
+          <li><a href="#projects" data-spy="projects">Projects</a></li>
+          <li>
+            <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener">
+              CV<span class="visually-hidden"> (PDF, opens in a new tab)</span>
+              <svg class="icon icon-sm" aria-hidden="true" viewBox="0 0 16 16"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <div class="container">
+  <main id="main">
 
-      <!-- ═══════════════════════════════════════
-           ABOUT / SHORT INTRODUCTION
-      ═══════════════════════════════════════ -->
-      <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p>
-          I am an M.S. student in Data Science at New York University. My interests lie in modeling
-          large-scale human and socio-technical systems using statistical learning, machine learning,
-          and simulation-based approaches. I am particularly interested in human mobility,
-          reinforcement learning, and computational systems.</br>
+    <!-- ═════════════ Hero ═════════════ -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-name">Yiwen (Bruce) Zhang</h1>
+          <p class="hero-role">M.S. in Data Science <span aria-hidden="true">·</span> New York University</p>
 
-          I graduated from UCLA in 2025 with bachelor's degrees in Statistics & Data Science and Applied Mathematics.
-        </p>
-      </section>
+          <p class="hero-lede">
+            I am interested in computational approaches to understanding human mobility and urban
+            systems&mdash;particularly how mobility patterns emerge, evolve, and respond to disruptions.
+            My research spans spatiotemporal modeling, generative methods, and large-scale mobility
+            data analysis.
+          </p>
+          <p class="hero-edu">
+            Previously at UCLA, double major in Applied Mathematics and Statistics &amp; Data Science (2025).
+          </p>
 
-      <!-- ═══════════════════════════════════════
-           SELECTED PROJECTS
-      ═══════════════════════════════════════ -->
-      <section id="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Selected Projects</h2>
-        <div class="projects-grid">
+          <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Applying to Ph.D. programs for Fall 2027</p>
 
-          <!-- ── Project: RL Ad Bidding ── -->
-          <article class="project-card">
-            <!-- TODO: replace this placeholder with an actual figure, screenshot, or demo GIF -->
-            <!-- Suggested path: assets/img/rl-bidding.png -->
-            <img class="project-figure" src="assets/projects/RL-ad-bidding.png" alt="RL Ad Bidding">
-            <div class="project-body">
-              <h3>RL Ad Bidding</h3>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/cv.pdf" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M4 1.75h5.5L12.5 4.75v9.5H4z M9.25 1.75v3.25h3.25 M6 8.5h4.5 M6 11h4.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+              CV<span class="visually-hidden"> (PDF, opens in a new tab)</span>
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/brucezhang1015" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </a>
+          </div>
+
+          <div class="email-row">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 16 16"><path d="M1.75 3.75h12.5v8.5H1.75z M2 4l6 4.75L14 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+            <span class="email-text"><span class="visually-hidden">Email: </span>brucezhang [at] nyu [dot] edu</span>
+            <button class="copy-btn" type="button" data-copy-email data-u="brucezhang" data-d="nyu.edu" hidden>Copy</button>
+          </div>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="assets/img/portrait.webp" width="640" height="652"
+               alt="Portrait of Yiwen (Bruce) Zhang outdoors in warm evening light"
+               fetchpriority="high" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ═════════════ About ═════════════ -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="prose">
+            <p>
+              My work centers on human mobility and the urban systems it shapes. At NYU, I work with
+              Prof.&nbsp;Takahiro Yabe in the Resilient Urban Networks Lab and with
+              Prof.&nbsp;Mingzhen Lu in the Lu Lab. Before NYU, I was a research assistant in the
+              UCLA Mobility Lab with Prof.&nbsp;Jiaqi Ma.
+            </p>
+            <p>
+              Across these projects I combine mechanistic mobility models, probabilistic inference,
+              and deep generative methods with large-scale mobility data&mdash;with particular
+              attention to what such data can and cannot reveal about the people and places
+              they represent.
+            </p>
+          </div>
+
+          <div class="focus-panel">
+            <h3 id="focus-heading" class="panel-title">Research interests</h3>
+            <ul class="focus-list">
+              <li>Human mobility</li>
+              <li>Computational urban systems</li>
+              <li>Spatiotemporal generative modeling</li>
+              <li>Behavioral adaptation to disruptions</li>
+              <li>Privacy-aware mobility analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════ Research experience ═════════════ -->
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <div class="container">
+        <h2 id="research-heading" class="section-title">Research Experience</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-inst">New York University</span>
+              <span class="timeline-when">Graduate research</span>
+            </div>
+            <article class="timeline-body">
+              <h3>Resilient Urban Networks Lab</h3>
+              <p class="advisor">Advisor: <a href="https://engineering.nyu.edu/faculty/takahiro-yabe" target="_blank" rel="noopener noreferrer">Prof. Takahiro Yabe</a></p>
               <p>
-                Budget-constrained real-time bidding with reinforcement learning and auction
-                simulation. Trains a bidding agent that learns adaptive budget pacing strategies
-                under competitive auction dynamics.
+                Disaster-aware modeling of human mobility: understanding how people adapt their
+                movement during hurricanes and other disruptions, and developing spatiotemporal
+                generative models that can capture those adaptations.
               </p>
-              <p class="keywords">PPO &middot; AuctionNet &middot; simulation &middot; budget pacing</p>
-              <div class="project-links">
-                <!-- TODO: replace # with your actual GitHub repo and slides URLs -->
-                <a href="https://github.com/cocoa-huang/rl-ad-bidding" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="assets/projects/RL-ad-bidding-slides.pdf" class="proj-link" target="_blank" rel="noopener noreferrer">Slides</a>
-              </div>
+              <p class="method">
+                <span class="method-label">Approach</span>
+                Evaluating mechanistic exploration and preferential return (EPR) models alongside
+                diffusion-based and discrete sequence generative approaches, using large-scale
+                aggregated mobility data.
+              </p>
+              <ul class="tags">
+                <li>EPR models</li><li>Diffusion models</li><li>Discrete sequence models</li><li>Aggregated mobility data</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-inst">New York University</span>
+              <span class="timeline-when">Graduate research</span>
+            </div>
+            <article class="timeline-body">
+              <h3>Lu Lab</h3>
+              <p class="advisor">Advisor: <a href="https://mingzhenlu-lab.com/" target="_blank" rel="noopener noreferrer">Prof. Mingzhen Lu</a></p>
+              <p>
+                Global human mobility and the population dynamics of rural, urban, and migrant
+                groups&mdash;how people distribute themselves across places and how those patterns
+                can be measured at a global scale.
+              </p>
+              <p class="method">
+                <span class="method-label">Approach</span>
+                Inferring recurring locations from observed mobility traces, characterizing how
+                observation coverage shapes what the data reveal, and modeling spatial interaction
+                between places.
+              </p>
+              <ul class="tags">
+                <li>Recurring-location inference</li><li>Observation coverage</li><li>Spatial interaction models</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-inst">UCLA</span>
+              <span class="timeline-when">Research Assistant</span>
+              <span class="timeline-when">2024&ndash;2025</span>
+            </div>
+            <article class="timeline-body">
+              <h3>UCLA Mobility Lab</h3>
+              <p class="advisor">Advisor: <a href="https://mobility-lab.seas.ucla.edu/" target="_blank" rel="noopener noreferrer">Prof. Jiaqi Ma</a></p>
+              <p>
+                Large-scale human mobility analysis, including probabilistic inference of activities
+                and locations, evaluation of privacy&ndash;utility trade-offs, and synthetic mobility
+                generation.
+              </p>
+              <p class="method">
+                <span class="method-label">Approach</span>
+                Built geospatial data pipelines and applied hidden Markov models with Viterbi decoding
+                to infer activity types and points of interest from trajectory data; contributed to
+                work on synthetic population and trajectory generation
+                (<a href="#pub-poptraj">PopTraj preprint</a>).
+              </p>
+              <ul class="tags">
+                <li>Hidden Markov models</li><li>Activity &amp; POI inference</li><li>Privacy&ndash;utility evaluation</li><li>Synthetic mobility</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═════════════ Publications ═════════════ -->
+    <section id="publications" class="section" aria-labelledby="publications-heading">
+      <div class="container">
+        <h2 id="publications-heading" class="section-title">Publications &amp; Writing</h2>
+
+        <h3 class="list-heading">Preprints</h3>
+        <ol class="pub-list">
+          <li class="pub" id="pub-poptraj">
+            <p class="pub-title">
+              PopTraj: Hierarchical Multi-Source Generation of Household-Coordinated Weekly
+              Activity&ndash;Location Trajectories with Urban Populations Synthesis
+            </p>
+            <p class="pub-authors">
+              Haoxuan Ma, Yifan Liu, Bo Yang, <strong class="me">Yiwen Zhang</strong>, Chris Stanford,
+              Eli Fox, Xishun Liao, Jiaqi Ma
+            </p>
+            <p class="pub-venue"><em>SSRN preprint</em>, 2026</p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.2139/ssrn.7484085" target="_blank" rel="noopener noreferrer">doi:10.2139/ssrn.7484085</a>
+            </p>
+          </li>
+        </ol>
+
+        <h3 class="list-heading">Reports &amp; writing samples</h3>
+        <ol class="pub-list">
+          <li class="pub">
+            <p class="pub-title">
+              Predicting GitHub Issue Resolution Time with Repository Signals and Semantic Representations
+            </p>
+            <p class="pub-authors">Eric Huang, <strong class="me">Bruce Zhang</strong></p>
+            <p class="pub-venue"><em>Technical report</em>, New York University, 2026</p>
+            <p class="pub-links">
+              <a href="assets/papers/GH-issue-res-report.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="https://github.com/cocoa-huang/gh-issue-resolution" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+          </li>
+          <li class="pub">
+            <p class="pub-title">
+              MathLABS: Evaluation of Visual Math Reasoning Capabilities in Multimodal Large Language Model
+            </p>
+            <p class="pub-authors">
+              Akhilesh Vangala*, <strong class="me">Bruce Zhang*</strong>, Lucas Yao*, Sahil Parupudi*
+              <span class="pub-note">(*equal contribution)</span>
+            </p>
+            <p class="pub-venue"><em>Course project report</em>, NYU Center for Data Science, 2025</p>
+            <p class="pub-links">
+              <a href="assets/papers/MathLABS-report.pdf" target="_blank" rel="noopener">PDF</a>
+              <a href="https://github.com/mathlabsNYU/mathlabs" target="_blank" rel="noopener noreferrer">Code</a>
+              <a href="https://huggingface.co/datasets/brucezhang41/MathLABS" target="_blank" rel="noopener noreferrer">Dataset</a>
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═════════════ Projects ═════════════ -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+        <p class="section-lede">Technical projects in machine learning and large-scale data systems.</p>
+
+        <div class="project-grid">
+
+          <article class="project project--wide project--text">
+            <div class="project-body">
+              <p class="project-meta"><span class="badge">Ongoing</span> NYU M.S. capstone</p>
+              <h3>Active Experimental Design for Latent Neural Dynamics</h3>
+              <p class="project-desc">
+                Can targeted perturbations make it more efficient to identify the latent dynamics
+                behind neural population activity? We study this on synthetic low-dimensional
+                dynamical systems with known ground truth.
+              </p>
+              <details class="project-details">
+                <summary>Details</summary>
+                <p>
+                  My part integrates a synthetic latent-dynamics generator with a nonlinear dynamical
+                  system (NLDS) estimator, builds controlled baselines that compare passive data,
+                  stimulated data with known inputs, and stimulated data without inputs, and runs
+                  reproducible multi-seed training and evaluation on NYU&rsquo;s HPC cluster.
+                </p>
+              </details>
+              <ul class="tags">
+                <li>System identification</li><li>Active learning</li><li>Latent dynamical systems</li><li>PyTorch</li>
+              </ul>
+              <p class="project-note">Code is not yet public.</p>
             </div>
           </article>
 
-          <!-- ── Project: GitHub Issue Resolution ── -->
-          <article class="project-card">
-            <!-- TODO: replace this placeholder with an actual figure or screenshot -->
-            <!-- Suggested path: assets/img/gh-issues.png -->
-            <img class="project-figure" src="assets/projects/GH-issue-res.png" alt="GitHub Issue Resolution Prediction">
-            
+          <article class="project">
+            <img class="project-img project-img--rl" src="assets/img/projects/rl-ad-bidding.webp" width="960" height="640"
+                 alt="Illustration of an agent placing bids in an ad auction" loading="lazy" decoding="async">
             <div class="project-body">
+              <p class="project-meta">NYU graduate course project &middot; Reinforcement Learning</p>
+              <h3>Reinforcement Learning for Ad Bidding</h3>
+              <p class="project-desc">
+                Learning budget-constrained bidding strategies for real-time ad auctions, using the
+                AuctionNet simulation environment and dataset.
+              </p>
+              <details class="project-details">
+                <summary>Details</summary>
+                <p>
+                  Benchmarks PPO, IQL, and BCQ agents against simple bidding baselines on return on
+                  investment, budget utilization, and win rate, with a focus on adaptive budget pacing.
+                </p>
+              </details>
+              <ul class="tags"><li>PPO</li><li>Offline RL</li><li>AuctionNet</li></ul>
+              <p class="project-links">
+                <a href="https://github.com/cocoa-huang/rl-ad-bidding" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="assets/projects/RL-ad-bidding-slides.pdf" target="_blank" rel="noopener">Slides</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <img class="project-img project-img--gh" src="assets/img/projects/gh-issue-resolution.webp" width="960" height="640"
+                 alt="Illustration of a GitHub issue moving from opened to closed along a timeline" loading="lazy" decoding="async">
+            <div class="project-body">
+              <p class="project-meta">With Eric Huang &middot; 2026</p>
               <h3>GitHub Issue Resolution Prediction</h3>
-              <p>
-                Predicting software issue resolution time using repository signals and language
-                models. Combines textual features from issue descriptions with structured
-                repository metadata via a hybrid modeling framework.
+              <p class="project-desc">
+                Predicting how quickly GitHub issues are resolved, using 8.69 million issues from
+                GH Archive under a temporal train&ndash;test split.
               </p>
-              <p class="keywords">DeBERTa &middot; temporal split &middot; hybrid modeling &middot; GitHub data</p>
-              <div class="project-links">
-                <!-- TODO: replace # with your actual GitHub repo and paper URLs -->
-                <a href="https://github.com/cocoa-huang/gh-issue-resolution" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="assets/papers/GH-issue-res-report.pdf" class="proj-link" target="_blank" rel="noopener noreferrer">Paper</a>
-
-              </div>
+              <details class="project-details">
+                <summary>Details</summary>
+                <p>
+                  Compares TF-IDF and repository-signal baselines, fine-tuned DeBERTa-v3, and a hybrid
+                  that prepends LLM-generated issue summaries. Fine-tuned text models outperform
+                  lexical baselines; repository signals add modest gains, and LLM summaries aid
+                  interpretability without improving accuracy.
+                </p>
+              </details>
+              <ul class="tags"><li>DeBERTa-v3</li><li>BigQuery</li><li>Temporal evaluation</li></ul>
+              <p class="project-links">
+                <a href="https://github.com/cocoa-huang/gh-issue-resolution" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="assets/papers/GH-issue-res-report.pdf" target="_blank" rel="noopener">Report</a>
+              </p>
             </div>
           </article>
 
-          <!-- ── Project: Human Mobility Modeling ── -->
-          <article class="project-card">
-            <!-- TODO: replace this placeholder with an actual figure or screenshot -->
-            <!-- Suggested path: assets/img/mobility.png -->
-            <img class="project-figure" src="assets/projects/Rec-system.png" alt="GitHub Issue Resolution Prediction">
-            
+          <article class="project">
+            <img class="project-img" src="assets/img/projects/recommendation.webp" width="960" height="640"
+                 alt="Diagram of user and item data feeding a collaborative-filtering recommendation model" loading="lazy" decoding="async">
             <div class="project-body">
+              <p class="project-meta">NYU Big Data (DS-GA 1004) capstone</p>
               <h3>Scalable Recommendation Modeling with Distributed Data Pipelines</h3>
-              <p>
-                Building a large-scale recommendation workflow using distributed processing and collaborative filtering techniques for personalized ranking and user preference modeling.
+              <p class="project-desc">
+                Book recommendation on the Goodreads dataset (about 223 million user&ndash;book
+                interactions) with distributed processing in Spark.
               </p>
-              <p class="keywords">Recommendation &middot; Distributed processing &middot; ASL</p>
-              <div class="project-links">
-                <!-- TODO: replace # with your actual GitHub repo and demo URLs -->
-                <a href="https://github.com/nyu-big-data/capstone-cap_12" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </div>
+              <details class="project-details">
+                <summary>Details</summary>
+                <p>
+                  Implements explicit- and implicit-feedback ALS collaborative filtering evaluated
+                  with ranking metrics, plus MinHash-based similarity search to group books that
+                  occupy similar positions in the reading market.
+                </p>
+              </details>
+              <ul class="tags"><li>PySpark</li><li>ALS</li><li>MinHash</li></ul>
+              <p class="project-note">Code is in a private course repository.</p>
             </div>
           </article>
 
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ═══════════════════════════════════════
-           WRITING SAMPLES
-      ═══════════════════════════════════════ -->
-      <section id="writing" aria-labelledby="writing-heading">
-        <h2 id="writing-heading">Writing Samples</h2>
-        <ul class="writing-list">
-
-
-
-
-
-          <li class="writing-item">
-            <div class="writing-meta">
-              <h3>Predicting GitHub Issue Resolution Time with Repository Signals and Semantic
-Representations</h3>
-              <p>
-                Combines textual features from issue descriptions with structured repository
-                metadata to predict software issue resolution time.
-              </p>
-            </div>
-            <!-- TODO: replace # with a link to this paper, report, or PDF -->
-            <a href="assets/papers/GH-issue-res-report.pdf" class="writing-link" target="_blank" rel="noopener noreferrer" aria-label="View GitHub Issue Resolution paper">View &rarr;</a>
-          </li>
-
-          <li class="writing-item">
-            <div class="writing-meta">
-              <h3>MathLABS: Visual Mathematical Reasoning Dataset</h3>
-              <p>
-                A dataset dedicated to evaluate the visual reasoning capabilities of multimodal LLMs.
-                
-              </p>
-            </div>
-            <a href="assets/papers/MathLABS-report.pdf" class="writing-link" target="_blank" rel="noopener noreferrer" aria-label="View MathLABS paper">View &rarr;</a>
-          </li>
-
-        </ul>
-      </section>
-
-      <!-- ═══════════════════════════════════════
-           CONTACT
-      ═══════════════════════════════════════ -->
-      <section id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <p class="contact-intro">
-          I am open to research opportunities and collaborations related to mobility modeling, reinforcement
-          learning, computational systems, and other aspects! Please feel free to reach out if you are interested in connecting or learning more about my work.
-        </p>
-        <ul class="contact-list">
-          <!-- TODO: replace YOUR_EMAIL@nyu.edu with your actual email address -->
-          <li>
-            <span class="contact-label">Email</span>
-            <a href="mailto:yz8063@nyu.edu">yz8063@nyu.edu</a>
-          </li>
-          <li>
-            <span class="contact-label">GitHub</span>
-            <a href="https://github.com/brucezhang1015" target="_blank" rel="noopener noreferrer">brucezhang1015</a>
-          </li>
-          <!-- TODO: replace YOUR_LINKEDIN with your LinkedIn username/handle -->
-          <li>
-            <span class="contact-label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/yiwen-zhang-6a873421a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </li>
-        </ul>
-      </section>
-
-    </div>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Yiwen (Bruce) Zhang</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-id">
+        <p class="footer-name">Yiwen (Bruce) Zhang</p>
+        <p class="footer-email">
+          <span class="email-text"><span class="visually-hidden">Email: </span>brucezhang [at] nyu [dot] edu</span>
+          <button class="copy-btn" type="button" data-copy-email data-u="brucezhang" data-d="nyu.edu" hidden>Copy</button>
+        </p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/brucezhang1015" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yiwen-zhang-6a873421a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="assets/cv.pdf" target="_blank" rel="noopener">CV<span class="visually-hidden"> (PDF, opens in a new tab)</span></a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Yiwen (Bruce) Zhang</p>
     </div>
   </footer>
 
+  <p class="visually-hidden" role="status" aria-live="polite" data-copy-status></p>
 </body>
 </html>

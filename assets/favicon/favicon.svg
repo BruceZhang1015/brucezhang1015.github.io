@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Minimal flat purple cat head: large pointed ears, stern almond eyes. -->
+  <g stroke-linejoin="round">
+    <path d="M14 38 L4 4 L29 24 Z" fill="#7650B4" stroke="#7650B4" stroke-width="4"/>
+    <path d="M50 38 L60 4 L35 24 Z" fill="#7650B4" stroke="#7650B4" stroke-width="4"/>
+    <path d="M14.5 29 L9.5 12 L23 23 Z" fill="#D2B6F2" stroke="#D2B6F2" stroke-width="2"/>
+    <path d="M49.5 29 L54.5 12 L41 23 Z" fill="#D2B6F2" stroke="#D2B6F2" stroke-width="2"/>
+  </g>
+  <ellipse cx="32" cy="41" rx="21" ry="18" fill="#7650B4"/>
+  <path d="M13.5 35 Q22 32 29.5 41.5 Q20 46.5 13.5 35 Z" fill="#FFF4CC"/>
+  <path d="M50.5 35 Q42 32 34.5 41.5 Q44 46.5 50.5 35 Z" fill="#FFF4CC"/>
+  <ellipse cx="23.4" cy="39.6" rx="2.1" ry="2.9" fill="#1E1230"/>
+  <ellipse cx="40.6" cy="39.6" rx="2.1" ry="2.9" fill="#1E1230"/>
+  <path d="M29.6 49 L34.4 49 L32 51.6 Z" fill="#D2B6F2" stroke="#D2B6F2" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>
